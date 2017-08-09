@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
-// app.use(bodyParser.json());
+app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.all('/', function(req, res, next) {
@@ -14,7 +14,7 @@ app.all('/', function(req, res, next) {
  });
 
 app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname + '/client/public/index.html'));
+  res.sendFile(path.join(__dirname + '/client/build/index.html'));
   // res.send('heyo');
 });
 
