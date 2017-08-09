@@ -14,7 +14,7 @@ app.all('/', function(req, res, next) {
  });
 
 app.get('/', function(req, res) {
-  res.sendFile('/client/build/index.html');
+  res.sendFile('blabhblah.html');
   // res.send('heyo');
 });
 
