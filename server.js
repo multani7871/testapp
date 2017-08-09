@@ -14,7 +14,7 @@ app.all('/', function(req, res, next) {
  });
 
 app.get('/', function(req, res) {
-  res.sendFile('blabhblah.html');
+  res.sendFile(path.join(__dirname + '/client/bu1/index.html));
   // res.send('heyo');
 });
 
